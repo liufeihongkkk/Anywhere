@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "Anywhere.exe"
-  "Anywhere.exe.manifest"
+  "Anywhere"
   "Anywhere.pdb"
-  "CMakeFiles/Anywhere.dir/Data_Structure/String/dic.cpp.obj"
-  "libAnywhere.dll.a"
+  "CMakeFiles/Anywhere.dir/Data_Structure/String/dic2.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/Github_Repositories/Anywhere/Data Structure/String/dic.cpp" "E:/Github_Repositories/Anywhere/cmake-build-debug/CMakeFiles/Anywhere.dir/Data_Structure/String/dic.cpp.obj"
+  "/home/clay/Anywhere/Data Structure/String/dic2.cpp" "/home/clay/Anywhere/cmake-build-debug/CMakeFiles/Anywhere.dir/Data_Structure/String/dic2.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

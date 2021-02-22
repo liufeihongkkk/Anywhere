@@ -1,3 +1,1 @@
-"E:\3rd Apps\CLion 2020.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Anywhere.dir/objects.a
-E:\3RDAPP~1\RESET_~1\X86_64~1.0-R\mingw64\bin\ar.exe cr CMakeFiles\Anywhere.dir/objects.a @CMakeFiles\Anywhere.dir\objects1.rsp
-E:\3RDAPP~1\RESET_~1\X86_64~1.0-R\mingw64\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\Anywhere.dir/objects.a -Wl,--no-whole-archive  -o Anywhere.exe -Wl,--out-implib,libAnywhere.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Anywhere.dir\linklibs.rsp
+/usr/bin/c++  -g   CMakeFiles/Anywhere.dir/Data_Structure/String/dic2.cpp.o  -o Anywhere 

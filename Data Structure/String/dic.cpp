@@ -69,24 +69,55 @@ public:
                                 i+=x-i+1;
                             }
                             else{   //万一长度又相等了怎么办？
-                                while()
+                                //indirect store the data
+                                int m=word1[x];
+                                while(x!=word1.size()&&word1[x]==word2[y]&&word1[x]>=m){
+                                    x++;
+                                    y++;
+                                }
+                                if(x==word1.size()){
+                                    t+=word1.substr(i);
+                                    t+=word1.substr(i);
+                                    return t;
+                                }
+                                else if(word1[x]<m&&word2[y]<m){
+                                    //递归的思想对两个字符串进行比较： 后面的字符串是否大于当前的
+                                    t+=word1.substr(i,x-i);
+                                    string t1=word1.substr(x);
+                                    string t2=word2.substr(j);
+                                    string t3=word1.substr(i);
+                                    string t4=word2.substr(y);
+                                    t+=max(largestMerge(t1,t2),largestMerge(t3,t4));
+                                    return t;
+                                }
+                                else{  //must there is a bigger and there is a smaller.
+                                    if(word1[x]>word2[y]){
+                                        t+=word1.substr(i,x-i+1);
+                                        i+=x-i+1;
+                                    }
+                                    else{
+                                        t+=word2.substr(j,y-j+1);
+                                        j+=y-j+1;
+                                    }
+                                }
                             }
                         }
                         else{
-                            t+=word2.substr(j,y-j+1);
-                            t+=word1.substr(i,x-i+1);
-                            j+=y-j+1;
-                            i+=x-i+1;
+                            t+=word2.substr(j,y-j);
+                            t+=word1.substr(i,x-i);
+                            j+=y-j;
+                            i+=x-i;
                         }
                     }
                     else if(word1[x]>word2[j]&&word1[x]>word2[y]){  //x大于y的情况
                         t+=word1.substr(i,x-i+1);
                         i+=x-i+1;
                     }
-                    else{    //y大于x的情况
+                    else if(word2[y]>word2[j]&&word1[x]<word2[y]){    //y大于x的情况
                         t+=word2.substr(j,y-j+1);
                         j+=y-j+1;
                     }
+                    else
                 }
             }
             else{

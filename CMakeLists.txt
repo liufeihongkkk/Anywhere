@@ -3,4 +3,4 @@ project(Anywhere)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Anywhere  "Data Structure/String/dic.cpp")
+add_executable(Anywhere "Data Structure/String/dic2.cpp")
